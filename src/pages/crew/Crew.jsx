@@ -30,27 +30,7 @@ const Crew = () => {
     }, [idCrew])
 
 
-    useEffect(() => {
-
-      if (previousWidth <= 768 && responsive.width > 768) {
-        
-        setListImg(fondo.desktop);
-
-      } 
-      else if ((previousWidth > 768 || previousWidth<=375) && responsive.width <= 768 &&  responsive.width > 375) {
-        
-        setListImg(fondo.tablet);
-
-
-      }
-      else if (previousWidth > 375 && responsive.width <= 375)
-      {
-        setListImg(fondo.mobile);
-
-
-      }
-      setPreviousWidth(responsive.width);
-    }, [responsive.width]);
+    
 
     const navigate = useNavigate();
 
