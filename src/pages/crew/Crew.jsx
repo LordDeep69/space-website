@@ -15,7 +15,6 @@ const Crew = () => {
     const fondo = fondoCrew;
     const responsive = useScreenSize();
     const [listImg, setListImg] = useState(responsive.width > 768 ? fondo.desktop : (responsive.width > 375 ? fondo.tablet : fondo.mobile));
-    const [previousWidth, setPreviousWidth] = useState(0);
 
     const [info, setInfo] = useState({})
     const [imageCrew, setimageDestination] = useState('')
