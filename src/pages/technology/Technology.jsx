@@ -11,7 +11,7 @@ const Technology = () => {
     const responsive = useScreenSize();
     const [selectedNumber, setSelectedNumber] = useState(null);
     const [listImg, setListImg] = useState(responsive.width > 768 ? fondo.desktop : (responsive.width > 375 ? fondo.tablet : fondo.mobile));
-    const [previousWidth, setPreviousWidth] = useState(0);
+
 
     const [info, setInfo] = useState({})
     const [imageTechnology, setImageTechnology] = useState('')
