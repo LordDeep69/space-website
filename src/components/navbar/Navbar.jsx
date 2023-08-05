@@ -9,7 +9,7 @@ import useScreenSize from '../../hooks/useScreenSize';
 const Navbar = () => {
 
 
-    const {idCrew} = useParams();
+
     const [selectedMenuItem, setSelectedMenuItem] = useState(0);
     const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
