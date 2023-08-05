@@ -12,13 +12,7 @@ const Home = () => {
 
 
     useEffect(() => {
-      console.log('--------------------------');
-      console.log('--------------------------');
 
-      console.log('VALOR DE PREVIOUS: ' + previousWidth);
-      console.log('VALOR DE AHORA: ' + responsive.width);
-      console.log('--------------------------');
-      console.log('--------------------------');
 
       if (previousWidth <= 768 && responsive.width > 768) {
         
