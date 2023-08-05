@@ -3,7 +3,6 @@ import './destination.scss'
 import Header from '../../components/header/Header'
 import useScreenSize from '../../hooks/useScreenSize';
 import { fondoDestinations } from '../../services/fondosServices';
-import moon from '../../assets/destination/image-moon.webp'
 import {useNavigate, useParams } from 'react-router-dom';
 import { getDestination } from '../../services/destinationsService';
 const Destination = () => {
