@@ -23,11 +23,11 @@ const Navbar = () => {
 
       if (currentPath === '/') {
         setSelectedMenuItem(0);
-      } else if (currentPath === '/Destination/2') {
+      } else if (currentPath === '/Destination/2' || currentPath === '/Destination/3' || currentPath === '/Destination/4' || currentPath === '/Destination/5'  ) {
         setSelectedMenuItem(1);
-      } else if (currentPath === '/Crew/2') {
+      } else if (currentPath === '/Crew/2' || currentPath === '/Crew/3' || currentPath === '/Crew/4' || currentPath === '/Crew/5' ) {
         setSelectedMenuItem(2);
-      } else if (currentPath === '/Technology/2') {
+      } else if (currentPath === '/Technology/2' || currentPath === '/Technology/3' || currentPath === '/Technology/4' || currentPath === '/Technology/5' ) {
         setSelectedMenuItem(3);
       } else {
         setSelectedMenuItem(null);
