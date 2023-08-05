@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Barlow:wght@100&family=Bellefair&display=swap');
+
+
+.technology
+
+{
+    .technology__container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    section
+    {
+                
+        @media screen and (min-width: 769px) 
+        {    
+            // margin-top: 30px;
+            display: flex;
+        } 
+
+    }
+    .number-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        
+        @media screen and (min-width: 769px) 
+        {    
+            flex-direction: column;
+            margin-top: 100px;
+            margin-left: 180px;
+
+        }
+
+
+        cursor: pointer;
+    
+        .circle-number {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid rgba(255, 255, 255, 1);
+          border-radius: 50%;
+          opacity: 0.25;
+          font-size: 18px; /* Ajusta el tamaño de la fuente según tus preferencias */
+          color: white;
+          
+
+          &.selected {
+            background: rgba(255, 255, 255, 1);
+            opacity: 1;
+            color: black;
+          }
+        }
+      }
+
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .textTechnology
+    {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 376px)  and  (max-width: 768px) 
+        {          
+            justify-content: flex-start;
+
+        }
+    }
+
+    .technology__figure
+    {
+        display: flex;
+        width: 100%;
+        height: 60vw;
+        margin-top: 32px;
+        
+        @media screen and (min-width: 376px)  and  (max-width: 768px) 
+        {          
+            height: 35vw;
+        }
+
+        @media screen and (min-width: 768px) 
+        {        
+            height: 30vw;
+            
+        }
+
+
+
+        .technology__img
+        {            
+            width: 100%;
+            height: 45.35vw;
+            @media screen and (min-width: 376px)  and  (max-width: 768px) 
+            {          
+                height: 30vw;
+                
+            }
+            @media screen and (min-width: 768px) 
+            {        
+                margin-bottom: 101px;
+                width: 32vw;  
+                height: 35vw;
+                position: absolute;
+                left: 68vw;
+            }
+    
+        }
+    }
+
+    &__info
+    {
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @media screen and (min-width: 768px) 
+        {     
+            padding-top: 100px;
+            margin-left: 30px;
+        }
+
+        .TERMINOLOGY
+        {
+            font-family: Barlow Condensed;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 2.362499952316284px;
+            text-align: center;
+            color: rgba(208, 214, 249, 1);  
+            @media screen and (min-width: 768px) 
+            {     
+
+                text-align: start;
+                
+                
+            }
+        }
+
+        .technology__name
+        {
+            font-family: 'Bellefair', serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+            margin-top: 9px;
+            @media screen and (min-width: 376px)  and  (max-width: 768px) 
+            {          
+                font-size: 40px;
+                margin-top: 20px;
+            }
+            @media screen and (min-width: 768px) 
+            {     
+
+                text-align: start;
+                
+                
+            }
+            
+
+        } 
+
+        .description
+        {
+            font-family: Barlow;
+            font-size: 4vw;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: rgba(208, 214, 249, 1);
+            margin-top: 16px;
+
+            @media screen and (min-width: 376px)  and  (max-width: 768px) 
+            {     
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                width: 59.5vw;     
+                font-size: 2.25vw;
+            }
+
+            @media screen and (min-width: 768px) 
+            {     
+                font-size: 1vw;
+                width: 24vw;
+                text-align: start;
+                
+                
+            }
+            
+        }
+    }
+
+
+
+    &__container
+    {
+
+    }
+}

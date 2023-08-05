@@ -1,0 +1,142 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+    .icon {
+      /* Estilos del contenedor del ícono */
+      margin-right: 10px;
+    }
+  
+    .menu-container {
+      /* Estilos del contenedor del menú desplegable */
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 63%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.1); /* Cambia el último valor (0.5) para ajustar la opacidad del fondo */
+      backdrop-filter: blur(50px); /* Ajusta el valor del desenfoque según lo desees */
+      
+
+
+
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      transition: transform 0.3s ease;
+      transform: translateX(100%);
+
+      .close
+      {
+        position: absolute;
+        top: 40px; /* Ajusta esta distancia para posicionar el ícono en la parte superior */
+        right: 30px; /* Ajusta esta distancia para posicionar el ícono en la parte derecha */
+        cursor: pointer;
+        
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: #000000; /* Solo para ejemplo, cámbialo por el color deseado */
+          &.selected {
+            position: relative;
+    
+            &::after {
+              content: '';
+              position: absolute;
+              width: 127px;
+              height: 3px;
+              background: rgba(255, 255, 255, 1);
+              bottom: -10px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  
+    /* Estilos para mostrar el menú */
+    &.menu-open {
+      .menu-container {
+        transform: translateX(0);
+      }
+    }
+  }
+
+
+
+  // NavbarDesktop.scss
+
+.navbar-desktop {
+    width: 57.5vw;
+    height: 96px;
+    top: 40px;
+    left: 610px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) 
+    {
+        height: 10vw;
+        
+
+    }
+  }
+  
+  .navbar-item {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: left;
+    width: 120px;
+    height: 19px;
+    padding: 0px 2px 0px 0px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    white-space: nowrap; /* Evitar saltos de línea */
+    text-align: center;
+
+    &.selected {
+      position: relative;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -3vw; /* Ajusta la distancia de la línea debajo del ítem */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10vw;
+        height: 0.4vw;
+        background: rgba(255, 255, 255, 1);
+      }
+    }
+
+    @media screen and (max-width: 768px) 
+    {
+        font-size: 1.5vw;
+        margin: 0 0.2vw;
+        width: 20vw;
+        
+
+    }
+
+
+
+  }
+  
+  
